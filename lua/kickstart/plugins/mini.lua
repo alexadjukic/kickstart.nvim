@@ -40,5 +40,6 @@ return { -- Collection of various small independent plugins/modules
     }
     -- require('mini.animate').setup()
     require('mini.operators').setup()
+    require('mini.icons').setup()
   end,
 }

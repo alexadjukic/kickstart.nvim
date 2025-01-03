@@ -16,17 +16,25 @@ return {
   --     vim.cmd.hi 'Comment gui=none'
   --   end,
   -- },
+  -- {
+  --   'olimorris/onedarkpro.nvim',
+  --   priority = 1000, -- Ensure it loads first
+  --   init = function()
+  --     vim.cmd.colorscheme 'onedark'
+  --     -- vim.cmd.hi 'Comment gui=none'
+  --   end,
+  --   opts = {
+  --     highlights = {
+  --       IncSearch = { bg = '#FFFFFF', fg = '#000000' },
+  --     },
+  --   },
+  -- },
   {
-    'olimorris/onedarkpro.nvim',
-    priority = 1000, -- Ensure it loads first
+    'catppuccin/nvim',
+    priority = 1000,
     init = function()
-      vim.cmd.colorscheme 'onedark'
-      -- vim.cmd.hi 'Comment gui=none'
+      vim.cmd.colorscheme 'catppuccin'
     end,
-    opts = {
-      highlights = {
-        IncSearch = { bg = '#FFFFFF', fg = '#000000' },
-      },
-    },
+    flavour = 'mocha',
   },
 }
