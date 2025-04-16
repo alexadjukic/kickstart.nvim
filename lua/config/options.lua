@@ -45,7 +45,8 @@ vim.opt.splitbelow = true
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+-- vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = '  ', trail = '·', nbsp = '␣' }
 
 -- Some substitute stuff.
 vim.opt.inccommand = 'split'
